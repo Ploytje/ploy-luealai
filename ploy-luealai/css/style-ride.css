@@ -1,0 +1,61 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	color: #171515;
+	font-family: "lato", arial;
+}
+.close a {
+  font-size: 45pt;
+  text-decoration: none;
+  color: #171515;
+  display: block;
+  /*text-align: right;*/
+  /*margin-right: 40px;*/
+  margin-left: 95%;
+}
+.close a:hover {
+	font-weight: 900;
+}
+
+figure img {
+	width: 100%;
+}
+.tekst h1 {
+	font-size: 48px;
+}
+.tekst p {
+	font-size: 18px;
+	line-height: 31.42px;
+}
+
+.tekst {
+	grid-area: tekst;
+}
+.taImgEen {
+	grid-area: imgEen;
+}
+.taImgTwee {
+	grid-area: imgTwee;
+}
+.taImgDrie {
+	grid-area: imgDrie;
+}
+.taImgVier {
+	grid-area: imgVier;
+}
+.taImgVijf {
+	grid-area: imgVijf;
+}
+.taImgZes {
+	grid-area: imgZes;
+}
+.groupTakeARide {
+	display: grid;
+	grid-template-columns: auto auto ;
+	grid-template-areas:
+	'tekst tekst tekst tekst'
+	'imgTwee imgEen  imgVier imgVijf';
+	grid-gap: 10px;
+	justify-content: center;
+}

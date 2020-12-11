@@ -1,0 +1,58 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	color: #171515;
+	font-family: "lato", arial;
+}
+.close a {
+  font-size: 45pt;
+  text-decoration: none;
+  color: #171515;
+  display: block;
+  /*text-align: right;*/
+  /*margin-right: 40px;*/
+  margin-left: 95%;
+}
+.close a:hover {
+	font-weight: 900;
+}
+
+figure img {
+	width: 100%;
+}
+.tekst h1 {
+	font-size: 48px;
+}
+.tekst p {
+	font-size: 18px;
+	line-height: 31.42px;
+}
+.tekst {
+	grid-area: tekst;
+}
+.inImgEen {
+	grid-area: imgEen;
+}
+.inImgTwee {
+	grid-area: imgTwee;
+}
+.inImgDrie {
+	grid-area: imgDrie;
+}
+.inImgVier {
+	grid-area: imgVier;
+}
+
+.groupInterface {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: center;
+	grid-gap: 10px;
+	grid-template-areas: 
+	'tekst imgTwee'
+	'imgDrie imgVier'
+	'imgEen .';
+	margin-top: 50px;
+}
+
